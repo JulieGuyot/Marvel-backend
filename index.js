@@ -10,6 +10,9 @@ app.use(charactersRoutes);
 const comicsRoutes = require("./routes/comics");
 app.use(comicsRoutes);
 
+const charactersIdRoutes = require("./routes/charactersId");
+app.use(charactersIdRoutes);
+
 app.listen(3000, () => {
   console.log("Server started");
 });
