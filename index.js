@@ -13,6 +13,6 @@ app.use(comicsRoutes);
 const charactersIdRoutes = require("./routes/charactersId");
 app.use(charactersIdRoutes);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server started");
 });
